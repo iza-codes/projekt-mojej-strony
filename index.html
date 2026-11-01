@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój Projekt - DCI Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nagłówek strony -->
+    <header>
+        <h1>Witaj na mojej stronie!</h1>
+        <p>Tworzę aplikacje webowe krok po kroku z DCI.</p>
+        <!-- Neuner Button für Dark Mode -->
+    <button id="theme-toggle">🌙 Tryb Ciemny</button>
+    </header>
+
+    <!-- Główna sekcja zawartości -->
+    <main>
+        <section class="about">
+            <h2>O mnie</h2>
+            <p>Uczę się programowania: od pierwszego Frontendu do własnych aplikacji[cite: 1].</p>
+        </section>
+
+        <!-- Sekcja Projekty -->
+        <section class="projects-section">
+            <h2>Moje Projekty</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Strona Wizytówka</h3>
+                    <p>Pierwsza strona napisana w HTML, CSS i JS z trybem ciemnym oraz formularzem.</p>
+                    <span class="tag">HTML / CSS / JS</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Aplikacja To-Do</h3>
+                    <p>Planowany projekt aplikacji do zarządzania codziennymi zadaniami.</p>
+                    <span class="tag">JavaScript</span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Aplikacja Pogodowa</h3>
+                    <p>Projekt pobierający dane z zewnętrznego API i wyświetlający pogodę.</p>
+                    <span class="tag">APIs & Async JS</span>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Sekcja Formularza Kontaktowego -->
+        <section class="contact-section">
+            <h2>Skontaktuj się ze mną</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" required placeholder="Twoje imię">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="twój@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" rows="4" required placeholder="Napisz coś..."></textarea>
+                </div>
+
+                <button type="submit" id="send-btn">Wyślij wiadomość</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2026 Mój Projekt</p>
+    </footer>
+
+    <!-- Podłączenie skryptu JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html>
